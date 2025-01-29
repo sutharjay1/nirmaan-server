@@ -7,7 +7,7 @@ This document provides detailed information about the API endpoints for the Nirm
 The base URL for all API requests is:
 
 ```
-https://nirmaan-server-9tci.onrender.com
+https://nirmaan-server-9tci.onrender.com/api/
 ```
 
 ## Postman Collection
