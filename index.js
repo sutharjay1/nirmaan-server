@@ -1,8 +1,8 @@
-import express from 'express';
-import { urlencoded } from 'express';
-import routes from './route.js';
-import { connectToDB } from './connecToDB.js';
 import cookieParser from 'cookie-parser';
+import cors from 'cors';
+import express from 'express';
+import { connectToDB } from './connecToDB.js';
+import routes from './route.js';
 
 const app = express();
 const PORT = process.env.PORT || 8000;
