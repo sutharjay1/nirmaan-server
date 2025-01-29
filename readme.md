@@ -1,5 +1,6 @@
-
 # API Documentation
+
+## [Postman Collection](https://jay000-9914.postman.co/workspace/Jay-Workspace~9c1784f8-edda-4d9f-8a50-baff4eb350b8/collection/32602754-58b25ed9-43fb-4b80-95fa-1a06059b9c6f?action=share&creator=32602754)
 
 ## User Routes
 
