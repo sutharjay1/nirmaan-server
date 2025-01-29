@@ -1,6 +1,22 @@
 # API Documentation
 
-## [Postman Collection](https://jay000-9914.postman.co/workspace/Jay-Workspace~9c1784f8-edda-4d9f-8a50-baff4eb350b8/collection/32602754-58b25ed9-43fb-4b80-95fa-1a06059b9c6f?action=share&creator=32602754)
+This document provides detailed information about the API endpoints for the Nirmaan Server. The API allows users to register, login, manage cold storage facilities, compartments, and inventory.
+
+## Server URL
+
+The base URL for all API requests is:
+
+```
+https://nirmaan-server-9tci.onrender.com
+```
+
+## Postman Collection
+
+You can easily import the API collection into Postman to test the endpoints:
+
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://jay000-9914.postman.co/workspace/Jay-Workspace~9c1784f8-edda-4d9f-8a50-baff4eb350b8/collection/32602754-58b25ed9-43fb-4b80-95fa-1a06059b9c6f?action=share&creator=32602754)
+
+---
 
 ## User Routes
 
@@ -12,7 +28,7 @@
 
   ```json
   {
-    "email": "",
+    "email": "user@example.com",
     "password": "securepassword",
     "phoneNumber": "1234567890",
     "role": "customer"
@@ -23,7 +39,11 @@
 
   ```json
   {
-    "user": { "email": "", "role": "customer", ... },
+    "user": {
+      "email": "user@example.com",
+      "role": "customer",
+      ...
+    },
     "token": "jwt-token"
   }
   ```
@@ -52,7 +72,7 @@
 
   ```json
   {
-    "email": "",
+    "email": "user@example.com",
     "password": "securepassword"
   }
   ```
@@ -61,7 +81,10 @@
 
   ```json
   {
-    "user": { "email": "", ... },
+    "user": {
+      "email": "user@example.com",
+      ...
+    },
     "token": "jwt-token"
   }
   ```
@@ -81,7 +104,10 @@
   ```json
   {
     "name": "Cold Storage A",
-    "location": { "type": "Point", "coordinates": [78.9629, 20.5937] },
+    "location": {
+      "type": "Point",
+      "coordinates": [78.9629, 20.5937]
+    },
     "address": "123 Street, City",
     "totalCapacity": 1000,
     "availableCapacity": 500,
@@ -163,7 +189,10 @@
   [
     {
       "name": "Cold Storage A",
-      "location": { "type": "Point", "coordinates": [78.9629, 20.5937] },
+      "location": {
+        "type": "Point",
+        "coordinates": [78.9629, 20.5937]
+      },
       "isApproved": true
     }
   ]
